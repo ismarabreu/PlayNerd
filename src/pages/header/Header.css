@@ -1,0 +1,175 @@
+.head {
+    width: 100%;
+    background-color: var(--header-color);
+    z-index: 11;
+}
+
+.bgTopHeader {
+    display: none;
+}
+
+.top-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--header-color);
+    border-bottom: 1px solid var(--details-color);
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.logo {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-head img {
+    max-width: 15rem;
+    height: auto;
+}
+
+
+nav {
+    border-bottom: 1px solid var(--details-color);
+}
+
+.resp,
+.theme-resp {
+    z-index: 10;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-inline: 2rem;
+    color: var(--text-color-first);
+    transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--details-color);
+}
+
+@media screen and (max-width:768px) {
+
+    .bgTopHeader {
+        width: 100%;
+        height: 4rem;
+        z-index: 9;
+        background-color: var(--header-color);
+        border-bottom: 1px solid var(--details-color);
+        position: absolute;
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        border: none;
+        background-color: var(--header-color);
+        top: 0;
+        transition: left 0.3s ease-in-out;
+        left: -100%;
+        z-index: 20;
+    }
+
+    nav.open {
+        left: 0;
+    }
+
+    nav .close-nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        right: 20px;
+        top: 20px;
+    }
+
+    .ham-menu {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 30px;
+        color: var(--text-color-first);
+    }
+
+
+    /* --TEMA MOBILE---- */
+
+    .theme-desktop {
+        display: none;
+    }
+
+    .theme-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .theme-resp {
+        display: block;
+    }
+
+    .home {
+        background-color: var(--background-color);
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color-first);
+    }
+
+    .theme-mob {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+
+        background-color: var(--details-color);
+    }
+
+    .close-btn {
+        font-size: 30px;
+    }
+
+    nav button {
+        background: none;
+        border: none;
+        color: var(--text-color-first);
+    }
+
+    nav ul {
+        justify-content: start;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+    nav li {
+        display: flex;
+        align-items: center;
+        width: 20rem;
+        height: 4rem;
+        font-size: 20px;
+        border-bottom: 1px solid var(--background-color);
+    }
+
+
+
+}
