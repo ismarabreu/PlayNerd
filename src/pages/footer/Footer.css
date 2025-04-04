@@ -1,26 +1,72 @@
-
-
 .copy {
     padding: 1rem;
     background-color: var(--header-color);
+    display: flex;
+    justify-content: center;
+
 }
 
-.copy,
 .copy a {
-    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
     text-decoration: none;
     color: var(--text-color-first);
+    opacity: 0.5;
+    transition: 0.3s ease;
+
 }
 
-.socials{
+.copy a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.copy ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.copy li {
+    position: relative;
+    padding-inline: 0.8rem;
+}
+
+.copy li:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 60%;
+    background-color: var(--text-color-first);
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    opacity: 0.5;
+}
+
+.copy span {
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--text-color-first);
+    opacity: 0.5;
+
+}
+
+
+
+.socials {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     background-color: var(--details-color);
-   
+
 }
+
 .socials a {
     text-decoration: none;
     color: var(--white-black);
@@ -33,12 +79,13 @@
 .logo-footer {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     margin: 0 auto;
     padding: 1rem;
     border-bottom: 1px solid var(--header-color);
 
 }
+
 .logo-footer img {
     max-width: 15rem;
     height: auto;

@@ -16,8 +16,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copy">
-                <p>&copy; <a href="#">2025 PlayNerd.</a></p>
-                <p>Todos os direitos reservados</p>
+                <ul>
+                    <li><a href="">Sobre o PlayNerd</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Termos e condições</a></li>
+                    <li><a href="">Política e privacidade</a></li>
+                    <li><span>&copy; 2025 PlayNerd</span></li>
+                </ul>
             </div>
         </footer>
     )
