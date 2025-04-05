@@ -1,5 +1,33 @@
 .cardsContainer{
     margin: 0 auto;
-    background-color: grey;
+    width: 60vw;
     height: 100%;
+}
+
+.sectionName{
+    color: var(--black-white);
+    font-size: 28px;
+}
+.sectionName::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: var(--details-color);
+    display: block;
+}
+
+@media screen and (max-width:768px){
+    .cardsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionName{
+        min-width: 25rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
 }

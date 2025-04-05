@@ -1,17 +1,16 @@
 import './Body.css'
 import CardsContainer from './components/cards_container/CardsContainer'
+import AsideContainer from './components/aside_container/AsideContainer'
 
 function Body() {
 
   return (
-    <div className="body">
-      <div className="cards-container">
+    <main className="body">
+      <div className="container">
         <CardsContainer />
+        <AsideContainer />
       </div>
-      <div className="aside">
-        
-      </div>
-    </div>
+    </main>
   )
 }
 

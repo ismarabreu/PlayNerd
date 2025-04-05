@@ -1,0 +1,15 @@
+aside{
+    width: 30%;
+    border-left: 1px solid rgba(0, 0, 0, 0.384);
+    height: fit-content;
+}
+
+.asideContainer{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:768px) {
+    aside{
+        display: none;
+    }
+}

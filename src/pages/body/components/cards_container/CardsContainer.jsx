@@ -3,13 +3,13 @@ import "./CardsContainer.css"
 
 const CardsContainer = () => {
     return (
-        <div className="cardsContainer">
-            <h3>Notícias</h3>
+        <section className="cardsContainer">
+            <h3 className="sectionName">Notícias</h3>
             <Card />
             <Card />
             <Card />
             <Card />
-        </div>
+        </section>
     );
 };
 
