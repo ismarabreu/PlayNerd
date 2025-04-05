@@ -1,0 +1,21 @@
+.body{
+    background-color: var(--background-color);
+    height: 100%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ 
+}
+.aside{
+    background-color: blue;
+    width: 30%;
+}
+
+@media screen and (max-width:768px) {
+
+    .body{
+        padding-top: 6rem;  
+    }  
+
+}

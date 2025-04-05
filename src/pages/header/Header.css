@@ -2,6 +2,7 @@
     width: 100%;
     background-color: var(--header-color);
     z-index: 11;
+    position: fixed !important;
 }
 
 .bgTopHeader {

@@ -13,17 +13,20 @@
     color: var(--text-color-first);
     opacity: 0.5;
     transition: 0.3s ease;
-
+    line-height: 20px;
 }
 
 .copy a:hover {
     text-decoration: underline;
     opacity: 1;
+    
 }
 
 .copy ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -55,38 +58,59 @@
 
 }
 
+/* LOGO E REDES SOCIAIS */
 
-
-.socials {
+.footerUp {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    text-decoration: none;
     background-color: var(--details-color);
+    height: 4rem;
+
+}
+.logo-footer {
+    display: flex;
+
+}
+.logo-footer img {
+    max-width: 15rem;
+    height: auto;
+}
+
+.followUs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.followUs p{
+    color: var(--white-black);
 
 }
 
 .socials a {
     text-decoration: none;
     color: var(--white-black);
-    margin: 0.5rem;
-    font-size: 2rem;
-    margin: 1rem;
+    font-size: 1.8rem;
+    margin: 10px;
+    transform:scale(1);
+    transition: 0.3s ease;
+}
+
+.socials a:hover {
+    display: inline-block;
+    color: var(--black-white);
+    transform: scale(1.1); 
 }
 
 
-.logo-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1rem;
-    border-bottom: 1px solid var(--header-color);
+@media screen and (max-width:768px) {
+    .logo-footer img {
+        max-width: 12rem;
+        height: auto;
+    }
+    
 
-}
-
-.logo-footer img {
-    max-width: 15rem;
-    height: auto;
 }

@@ -5,16 +5,21 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="socials">
+            <div className="footerUp">
                 <a href="#" className="logo-footer">
                     <img src="./img/logo-playnerd.png" alt="logo" />
                 </a>
-                <p>Siga-nos também nas nossas redes sociais:</p>
-                <div className="socials-logos">
-                    <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+
+                <div className="followUs">
+                    <p>Siga-nos:</p>
+                    <div className="socials">
+                        <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+
+                    </div>
                 </div>
             </div>
+
             <div className="copy">
                 <ul>
                     <li><a href="">Sobre o PlayNerd</a></li>
